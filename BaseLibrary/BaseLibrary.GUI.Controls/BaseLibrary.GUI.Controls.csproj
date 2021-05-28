@@ -43,8 +43,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseControls\ZoomPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseControls\ZoomPanel.Designer.cs">
+      <DependentUpon>ZoomPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="BaseControls\ImageButtonBL.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseControls\LoadingScreenBarItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BaseControls\LoadingScreenBarItem.Designer.cs">
+      <DependentUpon>LoadingScreenBarItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControls\LoadingScreenLoadingBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControls\LoadingScreenLoadingBar.Designer.cs">
+      <DependentUpon>LoadingScreenLoadingBar.cs</DependentUpon>
     </Compile>
     <Compile Include="BaseControls\StatusLed.cs">
       <SubType>Component</SubType>
@@ -58,11 +76,30 @@
     <Compile Include="BaseControls\TextboxColorBL.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="BaseControls\TitleBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BaseControls\TitleBar.Designer.cs">
+      <DependentUpon>TitleBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="BaseControls\UserControlBL.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="BaseControls\TitleBar.resx">
+      <DependentUpon>TitleBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
