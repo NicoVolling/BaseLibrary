@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace BaseLibrary.GUI.Controls.BaseControls
 {
-    /// <inheritdoc/>
     /// <summary>
-    /// Ein <see cref="Label"/> mit einem aabgerundeten farbigen Hintergrund.
+    /// Ein <see cref="Label"/> mit einem abgerundeten farbigen Hintergrund.
     /// </summary>
+    /// <inheritdoc/>
     public class TagLabel : Label
     {
         public override void Refresh()
